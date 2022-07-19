@@ -27,19 +27,11 @@ struct ContentView: View {
     
     var body: some View {
         VStack {
-            Text("GifImage")
-                .font(.footnote.weight(.semibold))
-                .foregroundColor(.secondary)
-                .frame(maxWidth: .infinity, alignment: .center)
-                .padding(.horizontal, 16)
+            title("GifImage")
             gifImage
                 .padding(.bottom, 16)
             
-            Text("AsyncGifImage")
-                .font(.footnote.weight(.semibold))
-                .foregroundColor(.secondary)
-                .frame(maxWidth: .infinity, alignment: .center)
-                .padding(.horizontal, 16)
+            title("AsyncGifImage")
             asyncGifImages
             operationBar
         }
@@ -54,6 +46,14 @@ struct ContentView: View {
 }
 
 extension ContentView {
+    func title(_ text: String) -> some View {
+        Text(text)
+            .font(.footnote.weight(.semibold))
+            .foregroundColor(.secondary)
+            .frame(maxWidth: .infinity, alignment: .center)
+            .padding(.horizontal, 16)
+    }
+    
     var gifImage: some View {
         GifImage(resource: resource,
                  contentMode: .scaleAspectFill,
@@ -136,6 +136,7 @@ extension ContentView {
                 .accentColor(.white)
             }
         }
+        .padding(8)
     }
 }
 
