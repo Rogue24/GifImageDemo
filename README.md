@@ -136,7 +136,7 @@ AsyncGifImage(url: url,
 - `isAnimating`：控制GIF的播放/暂停；
 - `isReload`：重载GIF。
 
-# 最终效果
+## 最终效果
 
 ![effect.gif](https://github.com/Rogue24/JPCover/raw/master/GifImageDemo/effect.gif)
 
