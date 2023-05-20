@@ -2,6 +2,8 @@
 
 > 突然发现SwiftUI的Image貌似不支持播放GIF，那就只能自己尝试实现一把。
 
+![effect.gif](https://github.com/Rogue24/JPCover/raw/master/GifImageDemo/effect.gif)
+
 ## 1. SwiftUI中使用UIKit - UIViewRepresentable
 
 `SwiftUI`的`Image`和`AsyncImage`目前发现并不支持播放GIF，既然如此，最简单的实现就是将`UIKit`的`UIImageView`应用到`SwiftUI`中。
@@ -136,6 +138,6 @@ AsyncGifImage(url: url,
 
 # 最终效果
 
-![effect.gif](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/e231a83f768b4ed495f15fd9fec06118~tplv-k3u1fbpfcp-watermark.image?)
+![effect.gif](https://github.com/Rogue24/JPCover/raw/master/GifImageDemo/effect.gif)
 
 OK, done.
